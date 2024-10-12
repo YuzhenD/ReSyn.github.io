@@ -255,17 +255,10 @@
     <!-- RWKV Block -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Image Complexity Analysis</h2>
+        <h2 class="title is-3">RWKVIR Sub Block</h2>
 
         <!-- Interpolating. -->
-        <h3 class="title is-4">Complexity Distribution</h3>
-        <div class="content has-text-justified">
-          <p>
-            The complexity distributions of different datasets. The complexity distributions of the training datasets DIV2K and DF2K
-            have a typical shift, containing more images of low complexity. Our ReSyn dataset balances the distribution of low and 
-            high complexity images by image filtering based on the newly proposed GLCM image complexity measure.
-          </p>
-        </div>
+        <h3 class="title is-4">DC-Shift</h3>
         <div class="columns is-vcentered interpolation-panel">
           <div class="column is-3 has-text-centered">
             <img src=""
@@ -275,6 +268,7 @@
                four neighboring pixels, while our DC-shift is a depth-wise conv leveraging the 
                surrounding pixels in a kxk neighborhood.</p>
           </div>
+          <h3 class="title is-4">Cross-Bi-WKV</h3>
           <div class="column is-3 has-text-centered">
             <img src=""
                  class="interpolation-image"
@@ -284,7 +278,53 @@
         </div>
         <br/>
         <!--/ RWKV Block -->
-          
+
+        <!-- Experiments -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Super-Resolution Experiments</h2>
+
+        <!-- Interpolating. -->
+        <h3 class="title is-4">Classical SR Experiments(100K training iters)</h3>
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-3 has-text-centered">
+            <img src=""
+                 class="interpolation-image"
+                 />
+            <p>Quantitative comparison of classic image super-resolution with 
+               state-of-the-art methods on 10K iters training. The best and 
+               the second-best results are in red and blue.</p>
+          </div>
+          <h3 class="title is-4">Classical SR Experiments(500K training iters)</h3>
+          <div class="column is-3 has-text-centered">
+            <img src=""
+                 class="interpolation-image"
+                 />
+            <p class="is-bold">Quantitative comparison on classic image 
+                super-resolution with state-of-the-art methods on 500K iters training.</p>
+          </div>
+            
+          <h3 class="title is-4">LightWeight SR Experiments(50K training iters)</h3>
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-3 has-text-centered">
+            <img src=""
+                 class="interpolation-image"
+                 />
+            <p>Quantitative comparison on lightweight image super-resolution with 
+                state-of-the-art methods on 50K training iterations. The best is in red.</p>
+          </div>
+          <h3 class="title is-4">LightWeight SR Experiments(500K training iters)</h3>
+          <div class="column is-3 has-text-centered">
+            <img src=""
+                 class="interpolation-image"
+                 />
+            <p class="is-bold">Quantitative comparison on lightweight image super-resolution
+                with state-of-the-art methods on 500K training iters.</p>
+          </div>
+        </div>
+        <br/>
+        <!--/ Experiments -->
+        
       </div>
     </div>
 
