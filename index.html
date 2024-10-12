@@ -73,4 +73,29 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Image restoration (IR), which aims to recover high-quality images from degraded inputs, is a crucial task in modern image processing. Recent advancements in deep learning, particularly with Convolutional Neural Networks (CNNs) and Transformers, have significantly improved image restoration performance. However, existing methods lack a unified training benchmark that specifies the training iterations and configurations. Additionally, we construct an image complexity evaluation metric using the gray-level co-occurrence matrix (GLCM) and 
+find that there exist a bias between the image complexity distributions of commonly used IR training and testing datasets, leading to suboptimal restoration results. Therefore, we construct a new large-scale IR dataset called ReSyn, that utilizes a novel image filtering method based on image complexity to achieve a balanced image complexity distribution, and contains both real and AIGC synthetic images. 
+From the perspective of measuring the model's convergence ability and restoration capability, we construct a unified training standard that specifies the training iterations and configurations for image restoration models. 
+Furthermore, we explore how to enhance the performance of transformer-based image restoration models based on linear attention mechanism. 
+We propose RWKV-IR, a novel image restoration model that incorporates the linear complexity RWKV into the transformer-based image restoration structure, and enables both global and local receptive fields. 
+Instead of directly integrating the Vision-RWKV into the transformer architecture, we replace the original Q-Shift in RWKV with a novel Depth-wise Convolution shift, which effectively models the local dependencies, and is further combined with Bi-directional attention to achieve both global and local aware linear attention.
+Moreover, we propose a Cross-Bi-WKV module that combines two Bi-WKV modules with different scanning orders to achieve a balanced attention for horizontal and vertical directions. 
+Extensive quantitative and qualitative experiments demonstrate the effectiveness and competitive performance of our RWKV-IR model.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</section>
+
+
+
 </html>
